@@ -1,0 +1,69 @@
+/* Formulaire principal */
+.formFormation {
+    background-color: #ffffff;
+    padding: 25px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Ligne du formulaire */
+.ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+/* Label avec classe tab (titre de section) */
+label.tab {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+/* Boutons submit */
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Espacement entre les boutons */
+.ligne input[type="submit"] + input[type="submit"] {
+    margin-top: 10px;
+}
+
+/* Effet au survol */
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .formFormation {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
